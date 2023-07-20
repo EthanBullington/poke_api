@@ -1,0 +1,36 @@
+[
+{
+  "model": "pokemon_app.pokemon",
+  "pk": 1,
+  "fields": {
+    "name": "Pikachu",
+    "level": 2,
+    "date_encountered": "2008-01-01",
+    "date_captured": "2023-07-13T14:16:03.047Z",
+    "description": "Unknown",
+    "captured": false,
+    "moves": [
+      3,
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "pokemon_app.pokemon",
+  "pk": 2,
+  "fields": {
+    "name": "Charizard",
+    "level": 25,
+    "date_encountered": "2008-01-01",
+    "date_captured": "2023-07-13T14:16:03.050Z",
+    "description": "Unknown",
+    "captured": false,
+    "moves": [
+      2,
+      1,
+      4
+    ]
+  }
+}
+]

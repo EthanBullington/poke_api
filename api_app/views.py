@@ -15,9 +15,9 @@ class Noun_project(APIView):
         auth = OAuth1(env.get('API_KEY'), env.get('SECRET_KEY')) # get key from api, this is Francisco
         endpoint = f"https://api.thenounproject.com/icon/{item}/"
         response = requests.get(endpoint, auth=auth)
-        print(env)
+        # print(env)
         JSONresponse = response.json()
         # pp.pprint(JSONresponse)
-        icon_url = JSONresponse.get('icon').get('icon_url') #using .get instead og [] to allow it to continue to work
+        icon_url = JSONresponse.get('icon').get('preview_url') #using .get instead og [] to allow it to continue to work
         # print(icon_url)
         return Response(icon_url)
